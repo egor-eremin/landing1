@@ -1,0 +1,120 @@
+@import "../../../node_modules/normalize.css/normalize";
+@import "partials/fonts";
+@import "partials/functions";
+@import "partials/variables";
+@import "partials/aos";
+@import "partials/slick";
+@import "blocks/index/indexNews";
+
+
+@import "blocks/common";
+@import "blocks/nav";
+@import "blocks/footer";
+
+
+.decor-img_header-1_licenses {
+  top: rem(-544px);
+}
+.decor-img_header-2_licenses {
+  top: rem(-314px);
+}
+.decor-img_header-3_licenses {
+  &::before {
+    display: none;
+  }
+}
+.decor-img_header-4_licenses {
+  width: rem(131px);
+  height: rem(236px);
+  border-color: #F5F4B2;
+  top: rem(-84px);
+  left: rem(-159px);
+}
+.decor-img_header-5_licenses {
+  border-color: #FF5B5B;
+}
+.decor-img_header-6_licenses {
+  border-color: #F5F4B2;
+  border-radius: 0 rem(90px) rem(90px) rem(90px);
+  top: rem(83px);
+}
+.decor-img_header-7_licenses {
+  border-color: #6E74C8;
+  border-radius: rem(90px) rem(90px) rem(90px) 0;
+  top: rem(124px);
+}
+.text-header-wrapper_licenses {
+  margin-top: rem(114px);
+}
+.licenses-list {
+  display: grid;
+  grid-template-columns: repeat(2, rem(456px));
+  grid-gap: rem(48px);
+  justify-content: space-between;
+}
+.section-licenses {
+  padding-top: rem(23px);
+  padding-bottom: rem(64px);
+}
+.licenses-list__text {
+  line-height: rem(21px);
+}
+.licenses-list__item-1 {
+  &::before {
+    transform: rotate(90deg);
+    top: rem(-60px);
+    left: rem(-53px);
+  }
+}
+.licenses-list__item-2 {
+  &::before {
+    transform: rotate(-90deg);
+    right: rem(-23px);
+    top: rem(-47px);
+  }
+}
+.licenses-decor {
+  width: rem(544px);
+  height: rem(544px);
+  border-radius: 50%;
+  background: #ECF2FE;
+  right: rem(-381px);
+  top: rem(-36px);
+}
+.wrapper_licenses {
+  position: relative;
+}
+.parallax-item-licenses-1,
+.parallax-item-licenses-2 {
+  width: rem(130px);
+  height: rem(259px);
+  border-radius: 0 rem(75px);
+  border: rem(7px) solid rgba(251, 251, 251, 0.54);
+}
+.parallax-item-licenses-1 {
+  top: auto !important;
+  bottom: rem(8px);
+  margin-left: rem(-622px);
+}
+.parallax-item-licenses-2 {
+  top: auto !important;
+  bottom: rem(-96px);
+  margin-left: rem(-680px);
+}
+
+
+
+@media (max-width: 1160px) {
+  .licenses-decor {
+    display: none;
+  }
+  .licenses-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .licenses-list {
+    grid-template-columns: 1fr;
+    grid-gap: rem(32px);
+  }
+}

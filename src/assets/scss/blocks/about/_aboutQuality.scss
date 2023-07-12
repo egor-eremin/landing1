@@ -1,0 +1,16 @@
+.quality-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quality__text {
+  max-width: rem(744px);
+  margin-bottom: rem(48px);
+}
+.section-quality {
+  padding-bottom: rem(64px);
+  z-index: 2;
+}
+
+@media (max-width: 1160px) {
+}

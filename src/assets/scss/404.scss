@@ -1,0 +1,49 @@
+@import "../../../node_modules/normalize.css/normalize";
+@import "../../../node_modules/magnific-popup/src/css/main";
+@import "partials/fonts";
+@import "partials/functions";
+@import "partials/variables";
+
+
+@import "blocks/common";
+@import "blocks/nav";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/forms/for-forms";
+@import "blocks/contacts/for-contacts";
+
+
+.text-header-wrapper_404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: rem(108px);
+  max-width: rem(744px);
+  width: 100%;
+
+}
+.page-header__title_404 {
+  font-weight: 800;
+  font-size: rem(200px);
+  line-height: rem(220px);
+  text-transform: uppercase;
+  margin-bottom: rem(24px);
+}
+.btn-start-trade_404 {
+  margin-bottom: rem(33px);
+}
+.wrapper-header_404 {
+  justify-content: flex-start;
+  align-items: center;
+}
+.page-header__text-404 {
+  color: $color-black;
+  margin-bottom: rem(24px);
+}
+.form-links_404 {
+  margin-top: 0;
+}
+.h1-title_404 {
+  margin-bottom: rem(24px);
+}
+

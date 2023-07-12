@@ -1,0 +1,20 @@
+include ../nav.pug
+header.page-header.page-header_other-page
+	.wrapper.wrapper-decor-img
+		.decor-img.decor-img_header-1(data-aos="")
+		.decor-img.decor-img_header-2.decor-img_header-2_markets-item(data-aos="")
+		.decor-img.decor-img_header-3.decor-img_header-3_markets-item(data-aos="")
+		.decor-img.decor-img_header-4.decor-img_header-4_markets-item(data-aos="")
+		.decor-img.decor-img_header-5.decor-img_header-5_markets-item(data-aos="")
+		.decor-img.decor-img_header-6.decor-img_header-6_markets-item(data-aos="")
+		.decor-img.decor-img_header-7.decor-img_header-7_markets-item(data-aos="")
+	.wrapper-page-image(data-aos="" data-aos-delay="300")
+		.wrapper.wrapper__header-bg
+			picture
+				source(srcset=baseDir + "assets/images/markets_1x.webp 1x, " + baseDir + "assets/images/markets_2x.webp 2x" type="image/webp")
+				img.header-img(data-aos="zoom-in" data-aos-delay="500" src=baseDir + "assets/images/markets_1x.png" srcset=baseDir + "assets/images/markets_1x.png 1x, " + baseDir + "assets/images/markets_2x.png 2x" alt="markets")
+	.wrapper.wrapper-header.wrapper-header_other-page
+		.text-header-wrapper
+			h1.page-header__title.h1-title !{marketsHeaderText.title[lang]}
+			p.page-header__text !{marketsHeaderText.text[lang]}
+			a(href=linkSignup).btn.btn-start-trade !{buttonText.btnStartTrade[lang]}

@@ -1,0 +1,64 @@
+.form-nav
+	include ../nav.pug
+header.page-header.page-header_forms.page-header_other-page
+	.wrapper.wrapper-decor-img
+		.decor-img.decor-img_header-1.decor-img_header-1_form(data-aos="")
+		.decor-img.decor-img_header-2.decor-img_header-2_form(data-aos="")
+		.decor-img.decor-img_header-3.decor-img_header-3_form(data-aos="")
+		.decor-img.decor-img_header-4.decor-img_header-4_form(data-aos="")
+		.decor-img.decor-img_header-5.decor-img_header-5_form(data-aos="")
+	.wrapper.wrapper-header.form-wrapper.wrapper-header_other-page
+		.text-header-wrapper.text-header-wrapper_forms
+			h1.h1-title.h1-title_register.center !{buttonText.signup[lang]}
+			p.recomend-text.center !{formsText.regRecommend[lang]}
+			.help-text.help-text-form.center !{formsText.text_required[lang]}
+			form#form-signup.main-form
+				.form-item
+					label.input-wrapper
+						span.label-form.label-form_sign !{formsText.labelName[lang]}
+						input.form-input.form-input_sign#submit-name(type="text" autocomplete="off" required name="first_name" minlength="2" maxlength="30" placeholder= formsText.placeholderName[lang])
+						span.error-icon
+				.form-item
+					label.input-wrapper
+						span.label-form.label-form_sign !{formsText.labelLastName[lang]}
+						input.form-input.form-input_sign#submit-lastname(type="text" autocomplete="off" required name="last_name" minlength="2" maxlength="30" placeholder= formsText.placeholderLastName[lang])
+						span.error-icon
+				.form-item
+					label.input-wrapper
+						span.label-form.label-form_sign !{formsText.labelPhone[lang]}
+						input.form-input.form-input_sign#submit-phone(type="tel" autocomplete="off" required name="phone_number" minlength="7" maxlength="50" placeholder= formsText.placeholderPhone[lang])
+						span.error-icon
+				.form-item
+					label.input-wrapper
+						span.label-form.label-form_sign !{formsText.labelMail[lang]}
+						input.form-input.form-input_sign#submit-email(type="email" autocomplete="off" required name="email" placeholder= formsText.placeholderEmail[lang])
+						span.error-icon
+				.form-item
+					label.input-wrapper.input-wrapper-password
+						span.label-form.label-form_sign !{formsText.labelPassword[lang]}
+						input.form-input.form-input_sign.form-input-pass#submit-pass-show(type="password" autocomplete="off" required name="password" minlength="2" maxlength="50" placeholder= formsText.placeholderPassword[lang])
+						.show-icon
+				.form-item
+					label.input-wrapper.input-wrapper-password
+						span.label-form.label-form_sign !{formsText.labelConfirmPassword[lang]}
+						input.form-input.form-input_sign.form-input-pass#confirm_password(type="password" name="confirm_password" autocomplete="off" required minlength="2" maxlength="50" placeholder= formsText.placeholderPassword[lang])
+						.show-icon
+				.form-item.form-item-promo
+					label.input-wrapper
+						span.label-form.label-form_sign !{formsText.labelPromo[lang]}
+						input.form-input.form-input_sign#submit-promo(type="text" autocomplete="off" name="promotional_code" placeholder= formsText.placeholderPromo[lang])
+				.form-item.form-item_checkbox
+					label.custom-checkbox-label
+						input.custom-checkbox-input(type="checkbox" required name="user_agreement" checked)
+						span.custom-checkbox
+						a(href= lang=="ru" ? 'https://trade.companyname.com/docs/user_agreement_ru.html' : 'https://trade.companyname.com/docs/user_agreement.html' target="_blank").custom-checkbox-text.custom-checkbox-text_sign !{formsText.checkboxAgreement[lang]}
+					label.custom-checkbox-label
+						input.custom-checkbox-input(type="checkbox" required name="refund_cancellation" checked)
+						span.custom-checkbox
+						a(href= lang=="ru" ? 'https://trade.companyname.com/docs/refund_cancellation_policy_ru.html' : 'https://trade.companyname.com/docs/refund_cancellation_policy.html' target="_blank").custom-checkbox-text.custom-checkbox-text_sign !{formsText.checkboxPolicy[lang]}
+				.form-btn-submit
+					button.js--submit-form.btn.btn-2.btn-main-form.btn-submit: span !{buttonText.btnReg[lang]}
+			.form-links
+				a(href="login.html").btn-show-more.form-links_item  !{formsText.allreadyText[lang]}
+				a(href="licenses.html").btn-show-more.form-links_item  !{navText.licenses[lang]}
+

@@ -1,0 +1,227 @@
+.accounts-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.accounts-list__title {
+  display: flex !important;
+  align-items: center;
+  font-size: rem(20px);
+  line-height: rem(24px);
+  color: $color-title;
+  height: rem(102px);
+  border: rem(4px) solid #ECF2FE;
+  border-radius: rem(50px) rem(50px) rem(50px) 0;
+  justify-content: center;
+  margin-bottom: rem(77px);
+  transition: 0.3s ease-in;
+}
+.accounts-list {
+  width: rem(552px);
+  .slick-list {
+    overflow: initial;
+  }
+}
+.account-list__item {
+  padding: rem(29px) rem(56px) rem(30px);
+  background: #F7FAFF;
+  border-radius: 0 rem(100px) rem(100px) 0;
+  &::before {
+    left: rem(63px);
+    bottom: rem(-46px);
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: rem(394px);
+    height: calc(100% - 1.125rem);
+    border: rem(7px) solid #FCFCFC;
+    border-radius: 0px rem(100px) rem(100px) rem(100px);
+    right: rem(-34px);
+    bottom: rem(-26px);
+    z-index: -1;
+  }
+}
+.accounts-list-title {
+  margin-right: rem(46px);
+  width: rem(360px);
+  flex-shrink: 0;
+  .slick-track {
+    width: 100% !important;
+    transform: none !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .slick-list {
+    overflow: initial;
+  }
+  .slick-slide {
+    width: 100% !important;
+    cursor: pointer;
+    &:last-child {
+      .accounts-list__title {
+        margin-bottom: 0;
+      }
+    }
+    &.slick-current {
+      .accounts-list__title {
+        border-color: #6E74C8;
+        box-shadow: rem(25px) rem(25px) rem(30px) rgba(80, 78, 161, 0.1);
+      }
+    }
+  }
+}
+.accounts-list__text {
+  min-height: rem(72px);
+}
+.account-row_1 {
+  padding-bottom: rem(24px);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  margin-bottom: rem(24px);
+}
+.accounts-list__conditions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.accounts-btn-wrapper {
+  width: 100%;
+}
+.accounts-list__conditions-row {
+  width: 50%;
+}
+.accounts-list__conditions-row-1 {
+  padding-right: rem(6px);
+}
+.accounts-list__conditions-row-2 {
+  padding-left: rem(6px);
+}
+.accounts-conditions-item {
+  margin-bottom: rem(3px);
+  padding-left: rem(22px);
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    width: rem(3px);
+    height: rem(3px);
+    left: rem(9px);
+    top: rem(6px);
+    background: $color-black;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &.hide {
+    color: rgba(0, 0, 0, 0.5);
+    &::before {
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+.accounts-btn-wrapper {
+  margin-top: rem(32px);
+}
+.slick-account-arrow {
+  width: rem(64px);
+  height: rem(64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  background: $color-button;
+  &:hover {
+    background: $color-button_hover;
+    svg {
+      opacity: 1;
+    }
+  }
+  &:active {
+    svg {
+      opacity: 1;
+    }
+  }
+  &.slick-prev-main {
+    margin-right: 0;
+    margin-bottom: rem(1px);
+  }
+  &.slick-next-main {
+    margin-left: 0;
+  }
+}
+.arrow-slider-wrapper_account-desctop {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  margin-left: rem(-1px);
+}
+.section-accounts {
+  padding-bottom: rem(64px);
+}
+.btn_accounts {
+  margin-top: rem(48px);
+}
+.accounts-list-mobile-title {
+  display: none;
+}
+.accounts-wrapper_mobile {
+  display: none;
+}
+
+// ADAPTIVE
+@media (max-width: 1160px) {
+  .accounts-list__title {
+    margin-bottom: rem(40px);
+  }
+}
+@media (max-width: 1024px) {
+  .accounts-list-mobile-title{
+    display: block;
+    margin-bottom: rem(24px) !important;
+  }
+  .account-list__item {
+    border-radius: rem(90px) rem(90px) rem(90px) 0;
+    margin-bottom: rem(40px);
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .account-list__item1 {
+    background: #6E74C8;
+  }
+  .account-list__item2 {
+    background: #FF5B5B;
+  }
+  .account-list__item3 {
+    background: #8ED1FD;
+  }
+  .accounts-list {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .accounts-list__text {
+    min-height: auto;
+    margin-bottom: rem(24px) !important;
+  }
+  .accounts-wrapper_mobile {
+    display: block;
+  }
+  .accounts-wrapper_desctop {
+    display: none;
+  }
+}
+@media (max-width: 640px)  {
+  .accounts-list {
+    width: 100%;
+  }
+  .account-list__item {
+    padding: rem(32px);
+  }
+}

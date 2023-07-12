@@ -1,0 +1,190 @@
+.decor-img_header-2_markets-item-forex {
+  top: rem(-314px);
+}
+.decor-img_header-3_markets-item-forex {
+  top: rem(-314px);
+  transform: rotate(32deg);
+  &::before {
+    border-color: #FF5B5B;
+  }
+}
+.decor-img_header-4_markets-item-forex {
+  border-color: #8ED1FD;
+}
+.decor-img_header-5_markets-item-forex {
+  width: rem(178px);
+  height: rem(330px);
+  border-color: #F5F4B2;
+  top: rem(-62px);
+  right: rem(-232px);
+}
+.decor-img_header-6_markets-item-forex {
+  border-color: #F5F4B2;
+  top: rem(215px);
+}
+.decor-img_header-7_markets-item-forex {
+  top: rem(154px);
+  border-color: #8ED1FD;
+}
+.decor-img_header-2_markets-item-metals {
+  top: rem(-313px);
+}
+.decor-img_header-3_markets-item-metals {
+  top: rem(-313px);
+  transform: rotate(25deg);
+  &::before {
+    right: rem(-10px);
+    border-color: #8ED1FD;
+  }
+}
+.decor-img_header-4_markets-item-metals {
+  width: rem(99px);
+  height: rem(179px);
+  border-color: #F5F4B2;
+  top: rem(-67px);
+  left: rem(-159px);
+}
+.decor-img_header-5_markets-item-metals {
+  width: rem(178px);
+  height: rem(330px);
+  border-color: #F5F4B2;
+  top: rem(-63px);
+  right: rem(-230px);
+}
+.decor-img_header-6_markets-item-metals {
+  border-color: #FF5B5B;
+  top: rem(113px);
+}
+.decor-img_header-7_markets-item-metals {
+  border-color: #8ED1FD;
+  top: rem(171px);
+}
+.decor-img_header-2_markets-item-stocks {
+  top: rem(-311px);
+}
+.decor-img_header-3_markets-item-stocks {
+  top: rem(-311px);
+  transform: rotate(25deg);
+  &::before {
+    right: rem(-10px);
+  }
+}
+.decor-img_header-5_markets-item-stocks {
+  border-color: #F5F4B2;
+  top: rem(-64px);
+  right: rem(-230px);
+}
+.decor-img_header-6_markets-item-stocks {
+  border-color: #FF5B5B;
+  top: rem(112px);
+}
+.decor-img_header-7_markets-item-stocks {
+  top: rem(171px);
+  border-color: #8ED1FD;
+}
+.decor-img_header-2_markets-item-commodities {
+  top: rem(-312px);
+}
+.decor-img_header-3_markets-item-commodities {
+  top: rem(-312px);
+  transform: rotate(33deg);
+  &::before {
+    width: rem(48px);
+    height: rem(48px);
+    right: rem(-40px);
+  }
+}
+.decor-img_header-4_markets-item-commodities {
+  border-color: #F5F4B2;
+}
+.decor-img_header-5_markets-item-commodities {
+  border-color: #504EA1;
+  top: rem(-141px);
+  right: rem(-250px);
+}
+.decor-img_header-6_markets-item-commodities {
+  border-color: #FF5B5B;
+  top: rem(100px);
+  right: rem(261px);
+}
+.decor-img_header-7_markets-item-commodities {
+  top: rem(171px);
+  border-color: #8ED1FD;
+}
+.decor-img_header-2_markets-item-indices {
+  top: rem(-312px);
+}
+.decor-img_header-3_markets-item-indices {
+  top: rem(-312px);
+  transform: rotate(33deg);
+  &::before {
+    width: rem(48px);
+    height: rem(48px);
+    right: rem(-40px);
+  }
+}
+.decor-img_header-4_markets-item-indices {
+  border-color: #F5F4B2;
+}
+.decor-img_header-5_markets-item-indices {
+  border-color: #504EA1;
+  top: rem(-142px);
+  right: rem(-248px);
+}
+.decor-img_header-6_markets-item-indices {
+  border-color: #FF5B5B;
+  top: rem(101px);
+  right: rem(260px);
+}
+.decor-img_header-7_markets-item-indices {
+  border-color: #8ED1FD;
+  top: rem(171px);
+}
+.decor-img_header-2_markets-item-crypto {
+  top: rem(-314px);
+}
+.decor-img_header-3_markets-item-crypto {
+  top: rem(-314px);
+  transform: rotate(33deg);
+  &::before {
+    width: rem(48px);
+    height: rem(48px);
+    right: rem(-40px);
+  }
+}
+.decor-img_header-4_markets-item-crypto {
+  border-color: #F5F4B2;
+}
+.decor-img_header-5_markets-item-crypto {
+  border-color: #504EA1;
+  top: rem(-142px);
+  right: rem(-250px);
+}
+.decor-img_header-6_markets-item-crypto {
+  border-color: #FF5B5B;
+  top: rem(98px);
+  right: rem(259px);
+}
+.decor-img_header-7_markets-item-crypto {
+  border-color: #8ED1FD;
+  top: rem(170px);
+}
+.header-img_forex {
+  margin-top: rem(91px);
+}
+.header-img_metals {
+  margin-top: rem(111px);
+}
+.header-img_stocks {
+  margin-top: rem(112px);
+}
+.header-img_commodities,
+.header-img_crypto,
+.header-img_indices {
+  margin-top: rem(85px);
+  margin-right: rem(11px);
+}
+
+// ADAPTIVE
+@media screen and (max-width: 1160px) {
+}

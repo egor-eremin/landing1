@@ -1,0 +1,11 @@
+include ../mixins/menuFooterMixin.pug
+
+footer.main-footer(class="main-footer_" + currentPage)
+    .wrapper-parallax.scene
+        .parallax-item.parallax-item-footer-1(data-depth="0.03")
+        .parallax-item.parallax-item-footer-2(data-depth="0.05")
+    .wrapper.wrapper_footer
+        .footer-decor.decor-img.footer-decor_1(data-aos="zoom-in" data-aos-delay="300")
+        .footer-decor.decor-img.footer-decor_2(data-aos="zoom-in" data-aos-delay="450")
+        .footer-decor.decor-img.footer-decor_3(data-aos="zoom-in" data-aos-delay="600")
+        +menuFooterMixin

@@ -1,0 +1,10 @@
+mixin marketTable(attr)
+    section.section.section-table
+        .wrapper.wrapper_for-table
+            .decor-img.decor-img_table(data-aos="zoom-in" data-aos-delay="300")
+            h2.h2-title.h2-title_table !{commonMarketsText.title_table[lang]}
+            .table-wrapper-for-shadow
+                .table-wrapper-for-border
+                    .table-wrapper
+                        .tableinsert(attr=attr)
+                .footnote.footnote_table !{commonMarketsText.footnote[lang]}

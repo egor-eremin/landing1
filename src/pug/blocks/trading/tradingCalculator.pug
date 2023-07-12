@@ -1,0 +1,33 @@
+section.section.section-calculators
+	.wrapper.wrapper-calculators.block-with-decor
+		.decor-img.decor-img_calc(data-aos="zoom-in" data-aos-delay="300")
+		h2.section-calculators__title.h2-title !{tradingCalculatorText.title[lang]}
+		p.calculators-prev-text.big-text.center !{tradingCalculatorText.text[lang]}
+		#tradeCalculator.trade-calculator
+.decor-img.decor-img_estimation
+	.decor-estimation-element(data-aos="zoom-in" data-aos-delay="300")
+section.section.section-estimation
+	.wrapper.wrapper-estimation
+		h2.section-estimation__title.h2-title !{estimationText.h2[lang]}
+		p.estimation-prev-text !{estimationText.ul_title[lang]}
+		.clc-results.clc-results_estimation
+			.clc-table.clc-field
+				.clc-tableTitles
+					-for(let i = 1; i < 8; i++)
+						.clc-tableTitles__item.clc-table__item !{estimationText["li_"+i][lang]}
+				.clc-tableResults.clc-tableResults_estimation
+					.clc-tableResults__item.clc-table__item EUR/USD Buy
+					.clc-tableResults__item.clc-table__item 1.09200
+					.clc-tableResults__item.clc-table__item 1
+					.clc-tableResults__item.clc-table__item 1.09201
+					.clc-tableResults__item.clc-table__item -5.09
+					.clc-tableResults__item.clc-table__item 200.00 EUR
+					.clc-tableResults__item.clc-table__item 0.92 EUR
+		.estimation
+			h3.estimation-title.h2-title !{estimationText.ul_title[lang]}
+			.estimation-wrapper
+				ul.estimation-list
+					-for(let i = 1; i < 8; i++)
+						li.estimation-list__item !{estimationText["offer_"+i][lang]}
+				.estimation-img-wrapper.block-with-decor
+					img(data-aos="zoom-in" data-aos-delay="300" src=baseDir + "assets/images/estimation_1x.jpg" srcset=baseDir + "assets/images/estimation_1x.jpg 1x, " + baseDir + "assets/images/estimation_2x.jpg 2x" alt="estimation")

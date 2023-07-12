@@ -1,0 +1,38 @@
+.conditions-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.conditions__text {
+  max-width: rem(744px);
+  margin-bottom: rem(48px);
+}
+.parallax-item-conditions-1,
+.parallax-item-conditions-2 {
+  width: rem(130px);
+  height: rem(259px);
+  border-radius: 0 rem(75px);
+  border: rem(7px) solid rgba(251, 251, 251, 0.54);
+}
+.parallax-item-conditions-1 {
+  top: rem(134px) !important;
+  margin-left: rem(-565px);
+}
+.parallax-item-conditions-2 {
+  top: rem(234px) !important;
+  margin-left: rem(-631px);
+}
+.conditions-decor {
+  width: rem(817px);
+  height: rem(817px);
+  border-radius: 50%;
+  background: #ECF2FE;
+  top: rem(-49px);
+  left: rem(-482px);
+}
+
+@media (max-width: 1160px) {
+  .conditions-decor {
+    display: none;
+  }
+}

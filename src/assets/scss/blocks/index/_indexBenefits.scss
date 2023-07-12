@@ -1,0 +1,78 @@
+.benefits-content-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.benefits-img {
+  img {
+    border-radius: 0 rem(100px) rem(100px) rem(100px);
+  }
+  &::before {
+    bottom: rem(-39px);
+    left: rem(-24px);
+  }
+}
+.benefits-list {
+  width: 100%;
+  max-width: rem(456px);
+}
+.btn-benefits {
+  margin-top: rem(16px);
+}
+.benefits-list-item {
+  margin-bottom: rem(32px);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.benefits-decor {
+  width: rem(1070px);
+  height: rem(1070px);
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #F7FAFF;
+  top: rem(-243px);
+  margin-left: rem(397px);
+  z-index: -1;
+}
+.parallax-item-benefits-1,
+.parallax-item-benefits-2 {
+  border-radius: 0 rem(90px) rem(90px) rem(90px);
+  border: rem(7px) solid #FCFCFC;
+  top: auto !important;
+  width: rem(181px);
+  height: rem(335px);
+}
+.parallax-item-benefits-1 {
+  bottom: rem(-264px);
+  margin-left: rem(-854px);
+}
+.parallax-item-benefits-2 {
+  bottom: rem(-185px);
+  margin-left: rem(-734px);
+}
+
+
+@media (max-width: 1160px) {
+  .benefits-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefits-list {
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefits-img {
+    margin-right: 0;
+    margin-bottom: rem(40px);
+    max-width: rem(400px);
+  }
+  .benefits-list__title,
+  .benefits-list__text {
+    text-align: center;
+  }
+}

@@ -1,0 +1,35 @@
+include ../nav.pug
+header.main-header.page-header
+	.wrapper.wrapper-decor-img
+		.decor-img.decor-img_header-1(data-aos="")
+		.decor-img.decor-img_header-2(data-aos="")
+		.decor-img.decor-img_header-3(data-aos="")
+		.decor-img.decor-img_header-4(data-aos="")
+		.decor-img.decor-img_header-5(data-aos="")
+		.decor-img.decor-img_header-6(data-aos="")
+		.decor-img.decor-img_header-7(data-aos="")
+	.wrapper.wrapper-header
+		.js-bg-main.main-background-slider-list
+				.main-background-slider-list__item.main-background-slider-list__item-1
+					.wrapper.main-background-slider_wrapper
+						.main-img-slider.main-img-slider_1(data-aos="")
+							.img-main.img-main_1
+							.img-main.img-main_2
+							.img-main.img-main_3
+							.img-main.img-main_4
+						.main-img-slider.main-img-slider_2(data-aos="")
+							.img-main.img-main_1
+							.img-main.img-main_2
+							.img-main.img-main_3
+							.img-main.img-main_4
+		.js-main-slider.main-slider-text
+			-for(let i = 1; i < 5; i++)
+				.main-slider__item(class=["main-slider__item"+i])
+					if i == 1
+						h1.main-slider__title.h1-title !{indexHeaderText["slide"+i].title[lang]}
+					else
+						.main-slider__title.h1-title !{indexHeaderText["slide"+i].title[lang]}
+					p.main-slider__text.page-header__text !{indexHeaderText["slide"+i].text[lang]}
+					a(href=linkSignup).btn.btn-start-trade !{buttonText.btnStartTrade[lang]}
+		.wrapper.arrow-main-wrapper
+			.dots-wrapper.dots-wrapper_main-slider-js.dots-wrapper_main-header

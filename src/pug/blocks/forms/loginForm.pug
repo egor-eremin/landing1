@@ -1,0 +1,30 @@
+.form-nav
+	include ../nav.pug
+header.page-header.page-header_forms.page-header_other-page
+	.wrapper.wrapper-decor-img
+		.decor-img.decor-img_header-1.decor-img_header-1_form(data-aos="")
+		.decor-img.decor-img_header-2.decor-img_header-2_form(data-aos="")
+		.decor-img.decor-img_header-3.decor-img_header-3_form(data-aos="")
+		.decor-img.decor-img_header-4.decor-img_header-4_form(data-aos="")
+		.decor-img.decor-img_header-5.decor-img_header-5_form(data-aos="")
+	.wrapper.wrapper-header.form-wrapper.wrapper-header_other-page
+		.text-header-wrapper.text-header-wrapper_login.text-header-wrapper_forms
+			h1.h1-title.h2-title_login.h1-title_register.center !{buttonText.login[lang]}
+			.help-text.help-text-form.help-text-form_login.center !{formsText.text_required[lang]}
+			form#enter-form.main-form.main-form_login
+				.form-item.form-item_login
+					label.input-wrapper
+						span.label-form.label-form_sign !{formsText.labelMail[lang]}
+						input.form-input.form-input_sign#submit-email(type="email" required name="email" placeholder= formsText.placeholderEmail[lang])
+						span.error-icon
+				.form-item.form-item_login.form-item_login-last
+					label.input-wrapper.input-wrapper-password
+						span.label-form.label-form_sign !{formsText.labelPassword[lang]}
+						input.form-input.form-input_sign.form-input-pass#submit-pass-show(type="password" name="password" minlength="2" maxlength="50" placeholder= formsText.placeholderPassword[lang])
+						.show-icon
+				.form-btn-submit.form-btn-submit_login
+					button.btn-submit.js--login-form.btn.btn-2.btn-login-form.btn-main-form !{buttonText.login[lang]}
+			.form-links.form-links_login
+				a(href="recovery.html").btn-show-more.form-links_item !{formsText.forgotText[lang]}
+				a(href="registration.html").btn-show-more.form-links_item !{buttonText.signup[lang]}
+

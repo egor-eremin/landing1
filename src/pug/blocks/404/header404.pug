@@ -1,0 +1,17 @@
+.form-nav
+	include ../nav.pug
+header.page-header.page-header_404.page-header_other-page.page-header_forms
+	.wrapper.wrapper-decor-img
+		.decor-img.decor-img_header-1.decor-img_header-1_form(data-aos="")
+		.decor-img.decor-img_header-2.decor-img_header-2_form(data-aos="")
+		.decor-img.decor-img_header-3.decor-img_header-3_form(data-aos="")
+		.decor-img.decor-img_header-4.decor-img_header-4_form(data-aos="")
+		.decor-img.decor-img_header-5.decor-img_header-5_form(data-aos="")
+	.wrapper.wrapper-header.wrapper-header_other-page.wrapper-header_404
+		.text-header-wrapper.text-header-wrapper_404
+			h1.h1-title.h1-title_404.h1-title_register.center 404
+			p.page-header__text.page-header__text-404.center !{headerText404.text[lang]}
+			.form-links.form-links_404
+				a(href="index.html").form-links_item.btn-start-trade_404 !{headerText404.textMainPage[lang]}
+				a(href="contacts.html").btn-show-more.form-links_item !{headerText404.textSupport[lang]}
+			img.img-404(data-aos="zoom-in" data-aos-delay="500" src=baseDir + "assets/images/error-img.png" alt="404")

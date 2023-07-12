@@ -1,0 +1,21 @@
+mixin marketHeader(title, text, className)
+	include ../blocks/nav.pug
+	header.page-header.page-header_other-page(class="page-header_" + className)
+		.wrapper.wrapper-decor-img
+			.decor-img.decor-img_header-1(class="decor-img_header-1_markets-item-" + className data-aos="")
+			.decor-img.decor-img_header-2(class="decor-img_header-2_markets-item-" + className data-aos="")
+			.decor-img.decor-img_header-3(class="decor-img_header-3_markets-item-" + className data-aos="")
+			.decor-img.decor-img_header-4(class="decor-img_header-4_markets-item-" + className data-aos="")
+			.decor-img.decor-img_header-5(class="decor-img_header-5_markets-item-" + className data-aos="")
+			.decor-img.decor-img_header-6(class="decor-img_header-6_markets-item-" + className data-aos="")
+			.decor-img.decor-img_header-7(class="decor-img_header-7_markets-item-" + className data-aos="")
+		.wrapper-page-image
+			.wrapper.wrapper__header-bg
+				picture
+					source(srcset=baseDir + "assets/images/markets-item-" + className + "_1x.webp 1x, " + baseDir + "assets/images/markets-item-" + className + "_2x.webp 2x" type="image/webp")
+					img.header-img(class="header-img_" + className data-aos="zoom-in" data-aos-delay="500" src=baseDir + "assets/images/markets-item-" + className + "_1x.png" srcset=baseDir + "assets/images/markets-item-" + className + "_1x.png 1x, " + baseDir + "assets/images/markets-item-" + className + "_2x.png 2x" alt="markets-item")
+		.wrapper.wrapper-header.wrapper-header_other-page
+			.text-header-wrapper.text-header-wrapper_other-page(class="text-header-wrapper_markets-" + className)
+				h1.page-header__title.h1-title !{title}
+				p.page-header__text !{text}
+				a(href=linkSignup).btn.btn-start-trade !{buttonText.btnStartTrade[lang]}

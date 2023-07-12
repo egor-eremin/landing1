@@ -1,0 +1,23 @@
+if accounts_type == "cold"
+	include ../../mixins/accountsMixinCold.pug
+else
+	include ../../mixins/accountsMixinHot.pug
+
+
+section.section.section-accounts
+	.wrapper.wrapper_accounts
+		h2.h2-title.h2-title__accounts !{indexAccountsText.h2[lang]}
+		.accounts-wrapper.accounts-wrapper_desctop
+			.accounts-list-title
+				.accounts-list__title !{indexAccountsText.account1.title[lang]}
+				.accounts-list__title !{indexAccountsText.account2.title[lang]}
+				.accounts-list__title !{indexAccountsText.account3.title[lang]}
+			.accounts-list.accounts-slider-js
+				+account(1)
+				+account(2)
+				+account(3)
+		.accounts-wrapper.accounts-wrapper_mobile
+			.accounts-list
+				+account(1)
+				+account(2)
+				+account(3)

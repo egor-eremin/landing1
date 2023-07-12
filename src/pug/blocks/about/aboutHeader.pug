@@ -1,0 +1,21 @@
+include ../nav.pug
+header.page-header.page-header_other-page
+	.wrapper.wrapper-decor-img
+		.decor-img.decor-img_header-1(class="decor-img_header-1_" + currentPage data-aos="")
+		.decor-img.decor-img_header-2(class="decor-img_header-2_" + currentPage data-aos="")
+		.decor-img.decor-img_header-3(class="decor-img_header-3_" + currentPage data-aos="")
+		.decor-img.decor-img_header-4(class="decor-img_header-4_" + currentPage data-aos="")
+		.decor-img.decor-img_header-5(class="decor-img_header-5_" + currentPage data-aos="")
+		.decor-img.decor-img_header-6(class="decor-img_header-6_" + currentPage data-aos="")
+		.decor-img.decor-img_header-7(class="decor-img_header-7_" + currentPage data-aos="")
+	.wrapper-page-image
+		.wrapper.wrapper__header-bg
+			picture
+				source(srcset=baseDir + "assets/images/" + currentPage + "_1x.webp 1x, " + baseDir + "assets/images/" + currentPage + "_2x.webp 2x" type="image/webp")
+				img.header-img(class="header-img_" + currentPage data-aos="zoom-in" data-aos-delay="500" src=baseDir + "assets/images/" + currentPage + "_1x.png" srcset=baseDir + "assets/images/" + currentPage + "_1x.png 1x, " + baseDir + "assets/images/" + currentPage + "_2x.png 2x" alt="trading img")
+	.wrapper.wrapper-header.wrapper-header_other-page
+		.text-header-wrapper.text-header-wrapper_about
+			h1.page-header__title.h1-title !{aboutHeaderText.title[lang]}
+			p.page-header__text !{aboutHeaderText.text[lang]}
+			a(href=linkSignup).btn.btn-about !{buttonText.btnStartTrade[lang]}
+

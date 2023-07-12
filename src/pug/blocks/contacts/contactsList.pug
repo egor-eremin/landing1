@@ -1,0 +1,25 @@
+section.section.section-contacts.section-with-decor.section-with-decor_top-right.section-with-decor_bottom-left
+	.wrapper.wrapper_contacts-list
+		.contacts-list
+			.contacts-list__item.contacts-list__item-1(data-aos="fade" data-aos-delay="300")
+				.circle-list__icon.contacts-list__icon-1
+					.circle-list__icon-bg.contacts-list__icon-bg-1
+					.circle-list__icon-img.contacts-list__icon-img-1
+						img(src=baseDir + "assets/images/" + currentPage + "-icon-1.svg" alt="contacts-icon")
+				h3.left.h3-title.label-contacts-item !{contactsListText.contact2[lang]}
+				p.left.contacts-list__title.contacts-list__title_email: a(href=`mailto:${companyData.email}`) !{companyData.email}
+			.contacts-list__item.contacts-list__item-2(data-aos="fade" data-aos-delay="450")
+				.circle-list__icon.contacts-list__icon-2
+					.circle-list__icon-bg.contacts-list__icon-bg-2
+					.circle-list__icon-img.contacts-list__icon-img-2
+						img(src=baseDir + "assets/images/" + currentPage + "-icon-3.svg" alt="contacts-icon")
+				h3.left.h3-title.label-contacts-item !{contactsListText.contact3[lang]}
+				p.left.contacts-list__title.contacts-list__title_address !{companyData.adres}
+			.contacts-list__item(data-aos="fade" data-aos-delay="600")
+				.circle-list__icon.contacts-list__icon-3
+					.circle-list__icon-bg.contacts-list__icon-bg-3
+					.circle-list__icon-img.contacts-list__icon-img-3
+						img(src=baseDir + "assets/images/" + currentPage + "-icon-2.svg" alt="contacts-icon")
+				h3.left.h3-title.label-contacts-item !{contactsListText.contact1[lang]}
+				p.left.contacts-list__title.contacts-list__title_phone !{companyData.phone}
+

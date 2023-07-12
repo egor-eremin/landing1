@@ -1,0 +1,23 @@
+.parallax-item-assets-1 {
+  width: rem(287px);
+  height: rem(150px);
+  border-radius: rem(100px) rem(100px) 0 rem(100px);
+  border: rem(7px) solid #FCFCFC;
+  top: auto !important;
+  bottom: rem(11px);
+  margin-left: rem(550px);
+}
+.parallax-item-assets-2{
+  width: rem(350px);
+  height: rem(150px);
+  border-radius: rem(100px) rem(100px) rem(100px) 0;
+  border: rem(7px) solid #FCFCFC;
+  top: auto !important;
+  bottom: rem(-81px);
+  margin-left: rem(409px);
+}
+.section-assets {
+  z-index: 3;
+}
+
+@media (max-width: 1160px) {}
