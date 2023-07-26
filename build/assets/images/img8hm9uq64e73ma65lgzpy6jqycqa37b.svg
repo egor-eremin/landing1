@@ -1,0 +1,7 @@
+<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="40.5" cy="40.5" r="40.5" fill="#FF5B5B"/>
+<path d="M40 50.061C49.0091 50.061 56.3125 42.7577 56.3125 33.7485C56.3125 24.7394 49.0091 17.436 40 17.436C30.9909 17.436 23.6875 24.7394 23.6875 33.7485C23.6875 42.7577 30.9909 50.061 40 50.061Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M56.6612 50.4097C52.2424 54.8285 46.2492 57.311 40 57.311C33.7508 57.311 27.7576 54.8285 23.3388 50.4097C18.92 45.9909 16.4375 39.9976 16.4375 33.7485C16.4375 27.4993 18.92 21.5061 23.3388 17.0873" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.75 64.561H47.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40 57.311V64.561" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

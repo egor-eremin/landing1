@@ -1,0 +1,29 @@
+<svg width="66" height="170" viewBox="0 0 66 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="33" cy="133" r="5" transform="rotate(-90 33 133)" fill="#8ED1FD"/>
+<circle cx="33" cy="37" r="5" transform="rotate(-90 33 37)" fill="#8ED1FD"/>
+<circle cx="61" cy="133" r="5" transform="rotate(-90 61 133)" fill="#8ED1FD"/>
+<circle cx="61" cy="37" r="5" transform="rotate(-90 61 37)" fill="#8ED1FD"/>
+<circle cx="5" cy="133" r="5" transform="rotate(-90 5 133)" fill="#8ED1FD"/>
+<circle cx="5" cy="37" r="5" transform="rotate(-90 5 37)" fill="#8ED1FD"/>
+<circle cx="33" cy="165" r="5" transform="rotate(-90 33 165)" fill="#8ED1FD"/>
+<circle cx="33" cy="69" r="5" transform="rotate(-90 33 69)" fill="#8ED1FD"/>
+<circle cx="61" cy="165" r="5" transform="rotate(-90 61 165)" fill="#8ED1FD"/>
+<circle cx="61" cy="69" r="5" transform="rotate(-90 61 69)" fill="#8ED1FD"/>
+<circle cx="5" cy="165" r="5" transform="rotate(-90 5 165)" fill="#8ED1FD"/>
+<circle cx="5" cy="69" r="5" transform="rotate(-90 5 69)" fill="#8ED1FD"/>
+<circle cx="33" cy="101" r="5" transform="rotate(-90 33 101)" fill="#8ED1FD"/>
+<circle cx="33" cy="5" r="5" transform="rotate(-90 33 5)" fill="#8ED1FD"/>
+<circle cx="61" cy="101" r="5" transform="rotate(-90 61 101)" fill="#8ED1FD"/>
+<circle cx="61" cy="5" r="5" transform="rotate(-90 61 5)" fill="#8ED1FD"/>
+<circle cx="5" cy="101" r="5" transform="rotate(-90 5 101)" fill="#8ED1FD"/>
+<circle cx="5" cy="5" r="5" transform="rotate(-90 5 5)" fill="#8ED1FD"/>
+<rect width="66" height="170" fill="url(#paint0_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="-2.99999" y1="-9.5" x2="105.5" y2="279.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="0.352643" stop-color="white" stop-opacity="0.95"/>
+<stop offset="0.799045" stop-color="white" stop-opacity="0.69"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
